@@ -1,0 +1,281 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #8c52ff;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #7e49e5;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 6s ease-in forwards infinite;
+}
+
+undefined
+.background li:nth-child(0) {
+    animation-delay: 0s;
+    left: 64vw;
+    top: 75vh;
+}
+
+.background li:nth-child(1) {
+    animation-delay: 2s;
+    left: 68vw;
+    top: 91vh;
+    border-color: #9a5aff;
+}
+
+.background li:nth-child(2) {
+    animation-delay: 4s;
+    left: 6vw;
+    top: 11vh;
+}
+
+.background li:nth-child(3) {
+    animation-delay: 6s;
+    left: 19vw;
+    top: 41vh;
+    border-color: #9a5aff;
+}
+
+.background li:nth-child(4) {
+    animation-delay: 8s;
+    left: 85vw;
+    top: 29vh;
+    border-color: #9a5aff;
+}
+
+.background li:nth-child(5) {
+    animation-delay: 10s;
+    left: 48vw;
+    top: 59vh;
+}
+
+h2, p, figcaption {
+  color: #EDE2C8;
+  font: Lucida Console;
+  width: 300px;
+}
+
+h1 {
+  color: #EDE2C8;
+  font-family: 'Luckiest Guy';
+  font-size: 50px;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.H1 {
+  color: #EDE2C8;
+  font-family: 'Luckiest Guy';
+  font-size: 50px;
+  text-align: left;
+}
+
+h3 {
+  color: #8C52FF;
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Luckiest Guy'; 
+}
+
+.hvideo {
+z-index: 150;
+  padding-bottom: 50%;
+}
+
+li, .button {
+  background-color: #8C52FF;
+  color: #EDE2C8;
+  border-color:#EDE2C8;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+li:hover, .button:hover {
+  background-color: #EDE2C8;
+  color: #8C52FF;
+  border-color:#EDE2C8;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  z-index: 300;
+  background-color: #8C52FF;
+  color: #EDE2C8;
+  border-color:#EDE2C8;
+  text-decoration: none; 
+}
+
+.sticky A {
+  float: left;
+  display: block;
+  text-align: left;
+  padding: 20px;
+  z-index: 300;
+  text-decoration: none;
+  color: #EDE2C8;
+}
+
+.sticky A:hover {
+  float: left;
+  display: block;
+  text-align: left;
+  padding: 20px;
+  z-index: 300;
+  text-decoration: none;
+  color: #8C52FF;
+}
+
+.list-inline {
+	list-style: none;
+	margin-left: -0.5em;
+	margin-right: -0.5em;
+	padding: 1;
+  z-index: 300;
+  text-decoration: none;
+}
+
+.header > li {
+	display: inline-block;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+  z-index: 300;
+  text-decoration: none;
+}
+
+.header > li:before {
+	content: "\200B";
+	position: absolute;
+  z-index: 300;
+}
+
+.Calendar {
+  margin-bottom: 8%;
+  margin-left: 1%;
+  margin-right: 9%;
+  float: right;
+}
+
+#calendar {
+  float: left;
+  text-align: left;
+  margin-left: 20%;
+}
+
+  .left, .middle, .right {
+   display: inline-block;
+}
+
+.left1, .middle1, .right1 {
+  float: right;
+  zoom: 90%;
+  position: static;
+  padding-bottom: 10%;
+}
+
+#Fotoalbum {
+  height: auto;
+  float: none;
+  padding-left: 20%;
+  padding-top: 10%;
+  display: inline-block;
+}
+#Fotoalbum A {
+  color:  #E5C26F;
+  text-decoration: none;
+}
+
+
+#did {
+  float: left;
+  position: static;
+  padding-bottom: 25%;
+  padding-left: 9%;
+}
+
+.info {
+  font-size: 12px;
+  color: #E5C26F;
+}
+
+.FAQ, .FAQ A {
+  box-sizing: content-box;
+  border-width: 60px;
+  background-color: #AE85FE; 
+  border: #691EFC 5px; 
+  border-top-style: solid; 
+  height: 170%; 
+  width: 55%;
+  padding-left: 15%;
+  padding-right: 25%;
+  padding-bottom: 2%;
+  padding-top: 5%;
+  margin: auto;
+}
+
+
+#FAQ {
+  padding-top: 20%;
+}
+
+
+.contact {
+  background-color: #EDE2C8;
+  color: #8C52FF;
+  font-size: 12px;
+  position: relative;
+  width: 100%;
+  height: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem; 
+  padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 350px) {
+  /* Voor telefoon */
+  [class*="col-"] {
+    width: 60%;
+  }
+}
